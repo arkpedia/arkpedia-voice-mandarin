@@ -2,8 +2,8 @@ name: Sync voice assets
 
 on:
   schedule:
-    # Daily, several hours after the 11:00 UTC game reset.
-    - cron: '22 14 * * *'
+    # 5h 19m after the 11:00 UTC Global reset; allow post-patch mirrors to update.
+    - cron: '19 16 * * *'
   workflow_dispatch:
 
 concurrency:
